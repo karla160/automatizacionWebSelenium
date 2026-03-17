@@ -6,13 +6,14 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin = {
-                "html:target/cucumber/cucumber-report.html",
-                "json:target/cucumber/cucumber.json"
-        },
         features = "src/test/resources/features",
-        glue = {"com.nttdata"},
-        tags = "@busquedaProducto"
+       glue = {"com.nttdata.stepsdefinitions", "com.nttdata.core"},
+        plugin = {
+                "pretty",
+                "html:target/cucumber-report.html",
+                "json:target/cucumber-report.json"
+        },
+        monochrome = true
 )
 public class RunnerTest {
 }
