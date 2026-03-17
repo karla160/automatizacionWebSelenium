@@ -1,3 +1,4 @@
+@testCompleto
 Feature: Login
 
   @loginExitoso

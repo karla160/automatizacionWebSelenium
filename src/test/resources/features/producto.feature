@@ -1,3 +1,4 @@
+@testCompleto
 Feature: Product - Store
 
     @producto
